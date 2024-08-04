@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/07_UI/PoolingEditor.uss?fileID=7433441132597879392&amp;guid=f1599721d513933478c94812422f2023&amp;type=3#PoolingEditor" />
+    <ui:VisualElement name="Container" style="flex-grow: 1; flex-direction: column;">
+        <ui:VisualElement name="ButtonContent" style="flex-direction: row; height: 30px;">
+            <ui:Button text="Create Pool" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PoolBtn" class="create-btn" style="border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0);" />
+            <ui:Button text="Generate Enum" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EnumBtn" class="generate-btn" style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Content" style="flex-grow: 1; flex-direction: row;">
+            <ui:ScrollView name="PoolItem" />
+            <ui:VisualElement name="Description" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

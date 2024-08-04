@@ -1,0 +1,31 @@
+.custom-label {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: rgb(68, 138, 255);
+}
+
+.create-btn {
+    flex-grow: 1;
+    color: rgb(0, 0, 0);
+    background-color: rgba(20, 220, 50, 0.71);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition-duration: 0.3s;
+}
+
+.create-btn:hover {
+    background-color: rgb(20, 220, 50);
+}
+
+.generate-btn {
+    flex-grow: 1;
+    background-color: rgba(255, 220, 0, 0.71);
+    -unity-font-style: normal;
+    transition-duration: 0.35s;
+}
+
+.generate-btn:hover {
+    background-color: rgb(255, 220, 0);
+}
