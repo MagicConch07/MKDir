@@ -1,3 +1,11 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement name="Container" style="flex-grow: 1;" />
+    <Style src="project://database/Assets/07_UI/PoolingItem/PoolingItem.uss?fileID=7433441132597879392&amp;guid=d01838ac9339e2d44b46d3dd87648cc2&amp;type=3#PoolingItem" />
+    <ui:VisualElement name="Container" style="flex-grow: 1;">
+        <ui:VisualElement name="Content" style="flex-grow: 1; flex-direction: row;">
+            <ui:Label tabindex="-1" text="Object" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EnumName" binding-path="enumName" style="font-size: 20px; -unity-text-align: middle-left;" />
+            <ui:VisualElement name="DeleteContent" style="flex-grow: 1; flex-direction: row; justify-content: flex-end; align-self: center;">
+                <ui:Button text="X" parse-escape-sequences="true" display-tooltip-when-elided="true" name="DeleteButton" class="delete-btn" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
 </ui:UXML>

@@ -1,0 +1,25 @@
+.delete-btn {
+    -unity-font-style: bold;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(210, 15, 25, 0.69);
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-width: 0.1px;
+    border-right-width: 0.1px;
+    border-bottom-width: 0.1px;
+    border-left-width: 0.1px;
+    transition-duration: 0.3s;
+    -unity-text-align: lower-left;
+}
+
+.delete-btn:hover {
+    background-color: rgb(220, 10, 25);
+}
