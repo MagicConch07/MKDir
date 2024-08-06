@@ -1,12 +1,16 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
-    <Style src="project://database/Assets/07_UI/PoolingEditor.uss?fileID=7433441132597879392&amp;guid=f1599721d513933478c94812422f2023&amp;type=3#PoolingEditor" />
-    <ui:VisualElement name="Container" style="flex-grow: 1; flex-direction: column;">
-        <ui:VisualElement name="ButtonContent" style="flex-direction: row; height: 30px;">
-            <ui:Button text="Create Pool" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PoolBtn" class="create-btn" style="border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0);" />
-            <ui:Button text="Generate Enum" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EnumBtn" class="generate-btn" style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0);" />
+    <ui:Template name="PoolingItem" src="project://database/Assets/07_UI/PoolingItem/PoolingItem.uxml?fileID=9197481963319205126&amp;guid=491a6640b05e5c44c9f76c7bcf0ee63e&amp;type=3#PoolingItem" />
+    <Style src="project://database/Assets/07_UI/PoolingEditor.uss?fileID=7433441132597879392&amp;guid=c02590fcfe9448f4b989f56b41a2840f&amp;type=3#PoolingEditor" />
+    <ui:VisualElement name="Container" style="flex-grow: 1;">
+        <ui:VisualElement name="Buttons" style="flex-direction: row; justify-content: center; align-items: auto; align-self: auto;">
+            <ui:Button text="CreatePool" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PoolBtn" class="pool-btn" />
+            <ui:Button text="GenerateEnum" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EnumBtn" class="enum-btn" />
         </ui:VisualElement>
         <ui:VisualElement name="Content" style="flex-grow: 1; flex-direction: row;">
-            <ui:ScrollView name="PoolItem" />
+            <ui:ScrollView style="flex-basis: 250px;">
+                <ui:Instance template="PoolingItem" name="PoolingItem" />
+                <ui:Instance template="PoolingItem" name="PoolingItem" />
+            </ui:ScrollView>
             <ui:VisualElement name="Description" style="flex-grow: 1;" />
         </ui:VisualElement>
     </ui:VisualElement>

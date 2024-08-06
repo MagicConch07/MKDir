@@ -4,28 +4,22 @@
     color: rgb(68, 138, 255);
 }
 
-.create-btn {
+.pool-btn {
     flex-grow: 1;
-    color: rgb(0, 0, 0);
-    background-color: rgba(20, 220, 50, 0.71);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    background-color: rgba(80, 150, 80, 0.71);
     transition-duration: 0.3s;
 }
 
-.create-btn:hover {
-    background-color: rgb(20, 220, 50);
-}
-
-.generate-btn {
+.enum-btn {
     flex-grow: 1;
-    background-color: rgba(255, 220, 0, 0.71);
-    -unity-font-style: normal;
-    transition-duration: 0.35s;
+    transition-duration: 0.3s;
+    background-color: rgba(160, 170, 0, 0.71);
 }
 
-.generate-btn:hover {
-    background-color: rgb(255, 220, 0);
+.pool-btn:hover {
+    background-color: rgb(80, 150, 80);
+}
+
+.enum-btn:hover {
+    background-color: rgb(160, 170, 0);
 }
